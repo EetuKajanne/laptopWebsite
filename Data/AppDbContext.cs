@@ -11,6 +11,8 @@ namespace laptopWebsite.Data
 
         // This line tells EF Core: "Create a table called 'Laptops' based on the Laptop class"
         public DbSet<Laptop> Laptops { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderItem> OrderItems { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
